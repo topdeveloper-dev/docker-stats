@@ -1,0 +1,1 @@
+sudo docker-compose -p docker-stats-block -f docker-compose.yml down

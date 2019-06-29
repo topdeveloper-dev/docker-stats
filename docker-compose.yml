@@ -1,0 +1,17 @@
+version: "2"
+
+services:
+  app1:
+    build:
+      context:  ./app1
+      dockerfile:  app.Dockerfile    
+    image: app1
+    volumes:
+      - ./data/:/data
+  app2:
+    build:
+      context:  ./app2
+      dockerfile:  app.Dockerfile    
+    image: app2
+    volumes:
+      - ./data/:/data
